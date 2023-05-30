@@ -1,7 +1,8 @@
 export const globalOptions = {
-  name: "testmodules-41093",
-  url: "https://testmodules-41093.botics.co",
-  api: "https://testmodules-41093.botics.co/api/v1"
+  "name": "testmodules-41093",
+  "url": "https://testmodules-41093.botics.co",
+  "api": "https://testmodules-41093.botics.co/api/v1",
+  "initialRoute": "Untitled1"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
