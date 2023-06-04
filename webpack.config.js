@@ -82,6 +82,11 @@ const imageLoaderConfiguration = {
     }
   }
 }
+const fileLoaderConfiguration = {
+  test: /\.ttf$/,
+  loader: require.resolve('file-loader'),
+  options: { esModule: false, name: 'static/media/[path][name].[ext]' },
+}
 
 module.exports = {
   entry: [
@@ -101,7 +106,7 @@ module.exports = {
   // ...the rest of your config
 
   module: {
-    rules: [babelLoaderConfiguration, imageLoaderConfiguration]
+    rules: [babelLoaderConfiguration, imageLoaderConfiguration, fileLoaderConfiguration]
   },
   plugins: [HTMLWebpackPluginConfig],
   resolve: {
