@@ -2,9 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, SafeAreaView } from "react-native";
 
 const Home = () => {
-
-  return (
-    <SafeAreaView>
+  return <SafeAreaView>
       <style type="text/css">{`
         @font-face {
           font-family: 'OpenSans-Bold';
@@ -16,12 +14,15 @@ const Home = () => {
         }
       `}</style>
       <View>
-        <Text style={{ fontFamily: "OpenSans-Bold", fontSize: 27 }}>OpenSans-Bold</Text>
+        <Text style={styles.HtaFLLNp}>OpenSans-Bold</Text>
       </View>
-    </SafeAreaView>
-  );
+    </SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
+  HtaFLLNp: {
+    fontFamily: "OpenSans-Bold",
+    fontSize: 27
+  }
 });
 export default Home;
