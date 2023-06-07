@@ -18,14 +18,14 @@ const TermsAndConditions = ({
       return setHtmlContent("<h1>Error Loading Terms and Conditions</h1>");
     });
   });
-  return <View style={_styles.lvxYFgVq}>
+  return <View style={_styles.mnlGQHKF}>
       <View style={options.styles.heading}>
         <TouchableOpacity style={options.styles.touchableopacity} onPress={() => {
         navigation.goBack();
       }}></TouchableOpacity>
         <Text style={options.styles.header}>{options.title}</Text>
       </View>
-      <ScrollView style={_styles.thzQCRet}>
+      <ScrollView style={_styles.LfUzeSpS}>
         <HTML source={{
         html: htmlContent
       }} contentWidth={contentWidth} />
@@ -39,10 +39,10 @@ export default {
 };
 
 const _styles = StyleSheet.create({
-  lvxYFgVq: {
+  mnlGQHKF: {
     flex: 1
   },
-  thzQCRet: {
+  LfUzeSpS: {
     flex: 1
   }
 });
